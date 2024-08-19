@@ -88,11 +88,11 @@ function App() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="h-16 flex items-center justify-center -mb-20 lg:-mb-0">
+      <header className="h-16 flex items-center justify-center ">
         <div className="w-4/5 max-w-4xl h-8 flex justify-center items-center overflow-hidden shadow-lg shadow-black rounded-full bg-[#16223f] text-white">
           <div
             className="h-full px-2 flex items-center justify-center cursor-pointer leading-none"
-            onClick={previousMonth}
+            onClick={() => previousMonth()}
           >
             <p className="font-extrabold text-xs sm:text-sm md:text-base lg:text-lg">
               &lt;
@@ -105,7 +105,7 @@ function App() {
           </div>
           <div
             className="h-full px-2 flex items-center justify-center cursor-pointer leading-none"
-            onClick={nextMonth}
+            onClick={() => nextMonth()}
           >
             <p className="font-extrabold text-xs sm:text-sm md:text-base lg:text-lg">
               &gt;
